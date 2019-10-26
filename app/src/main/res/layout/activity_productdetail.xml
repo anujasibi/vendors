@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Productdetail">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/base"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Product Details"
+                    android:background="#5c25b7"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:gravity="center_horizontal|center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/back"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@id/base"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/chooselayout"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Choose Shop"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/choose_head"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/sellingto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Selling to "
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/sellingto"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/customername"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#000"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <View
+                    android:id="@+id/divider8"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="#ebebeb"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/chooselayout"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+               android:id="@+id/rev"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/productshead"
+                    android:gravity="center_vertical"
+                    android:text="Products"
+                    android:textColor="#000"
+                    android:layout_height="30dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/recyclerView"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/productshead"
+                    android:layout_height="wrap_content">
+
+
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:id="@+id/proceed"
+                android:layout_below="@id/rev"
+                android:textColor="#fff"
+                android:background="@drawable/selc"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="CONTINUE"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
